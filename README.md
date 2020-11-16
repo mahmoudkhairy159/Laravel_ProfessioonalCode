@@ -2,6 +2,8 @@
 ## Laravel Authentication.
 ### Login with email or mobile.
 ## Larvel Email Verification using Mailtrap
+## Laravel Login and Signup with facebook using laravel socialite
+
 
 
 
