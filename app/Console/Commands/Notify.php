@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Mail\NotifyUserEmail;
 use Illuminate\Console\Command;
 
 class Notify extends Command
@@ -11,14 +12,14 @@ class Notify extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'notify:email';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'send email notification to users every day';
 
     /**
      * Create a new command instance.
@@ -37,6 +38,12 @@ class Notify extends Command
      */
     public function handle()
     {
-        //
+        // $user = User::select('email')->get();
+        $emails = User::pluck('email')->toArray();
+        $data=['title'=> 'programming' , 'body' => 'php'];
+        foreach($emails as $email){
+            //how to send email in laravel
+            Mail::To($email) ->send(new NotifyUserEmail($data));
+        }
     }
 }
