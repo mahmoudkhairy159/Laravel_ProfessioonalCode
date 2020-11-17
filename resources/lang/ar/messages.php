@@ -4,11 +4,20 @@ return [
 
 
 
-    'offer name' => 'اسم العرض مطلوب',
-    'price name' => 'سعر العرض مطلوب',
-    'description name'=>'وصف العرض مطلوب',
-    'name unique'=>'اسم العرض مطلوب',
-    'price numeric'=>'سعر العرض يجب ان يكون ارقام',
+    'offer name required' => 'اسم العرض مطلوب',
+    'price name required' => 'سعر العرض مطلوب',
+    'description name required'=>'وصف العرض مطلوب',
+    'name must be unique'=>'اسم العرض مطلوب موجود',
+    'price must be numeric'=>'سعر العرض يجب ان يكون ارقام',
+
+    'offer name'=>'اسم العرض',
+    'offer price'=>'سعر العرض',
+    'offer description'=>'وصف العرض',
+
+    'offer name ar' =>'اسم العرض باللغة العربية',
+    'offer name en' =>'اسم العرض باللغة الانجليزية',
+    'offer description ar'=>' وصف العرض  باللغة العربية',
+    'offer description en'=>' وصف العرض  باللغة الانجليزية',
 
 
 

@@ -6,12 +6,21 @@ use App\Http\Requests\OfferRequest;
 use App\Models\Offer;
 use Dotenv\Validator;
 use Illuminate\Http\Request;
+use \Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+
 
 class OfferController extends Controller
 {
 
     public function index()
     {
+        //$offers=Offer::all();
+        $offers=Offer::select(
+            'id',
+            'name_'.LaravelLocalization::getCurrentLocale() . ' as name',
+            'description_'.LaravelLocalization::getCurrentLocale() .' as description' ,
+            'price')->get();
+        return view('offers.allOffers')->with('offers',$offers);
 
     }
 
@@ -39,9 +48,12 @@ class OfferController extends Controller
 
         //insert
         Offer::create([
-            'name'=> $request->name,
+            'name_ar'=> $request->name_ar,
+            'description_ar'=>$request->description_ar,
+            'name_en'=> $request->name_en,
+            'description_en'=>$request->description_en,
             'price'=> $request->price,
-            'description'=>$request->description
+
         ]);
         return redirect(route('home'));
     }

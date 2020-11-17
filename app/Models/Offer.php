@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Offer extends Model
 {
-    protected $fillable=['name','price','description'];
+    protected $fillable=['name_en','description_en','name_ar','description_ar' ,'price'];
 
 }
