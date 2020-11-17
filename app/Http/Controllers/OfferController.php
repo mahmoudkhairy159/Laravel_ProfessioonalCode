@@ -59,6 +59,8 @@ class OfferController extends Controller
             'name.unique'=>__('messages.name unique'),
             'price.numeric'=> __('messages.price numeric'),
             'price.required'=>__('messages.price name'),
+            'description.required'=>__('messages.description name'),
+
         ];
         return $messages;
     }

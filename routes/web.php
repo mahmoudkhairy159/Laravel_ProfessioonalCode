@@ -16,14 +16,19 @@ Route::get('/', function () {
 });
 
 Auth::routes(['verify'=>true]);
-Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 //facebook socialite
 Route::get('redirect/{service}','SocialController@redirect');
 Route::get('callback/{service}','SocialController@callback');
 
-//
-Route::resource('offers','OfferController');
+
+Route::group(['prefix'=>LaravelLocalization::setLocale() ,
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+], function (){
+    Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+    Route::resource('offers','OfferController');
+});
+
 
 
 
