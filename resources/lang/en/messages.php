@@ -12,6 +12,8 @@ return [
     'offer name'=>'Offer Name',
     'offer price'=>'Offer Price',
     'offer description'=>'Offer Description',
+    'offer operation'=>'Operation',
+    'edit'=>'Edit Offer',
 
     'offer name ar'=>'Offer Name  in Arabic',
     'offer name en'=>'Offer Name  in English',

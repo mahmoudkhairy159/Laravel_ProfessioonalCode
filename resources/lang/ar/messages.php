@@ -13,11 +13,14 @@ return [
     'offer name'=>'اسم العرض',
     'offer price'=>'سعر العرض',
     'offer description'=>'وصف العرض',
+    'offer operation'=>'العملية',
+    'edit'=>'تحديث البيانات',
 
     'offer name ar' =>'اسم العرض باللغة العربية',
     'offer name en' =>'اسم العرض باللغة الانجليزية',
     'offer description ar'=>' وصف العرض  باللغة العربية',
     'offer description en'=>' وصف العرض  باللغة الانجليزية',
+
 
 
 

@@ -24,8 +24,8 @@ class OfferRequest extends FormRequest
     public function rules()
     {
         return [
-            'name_ar'=> 'required|max:100|unique:offers,name_ar',
-            'name_en'=> 'required|max:100|unique:offers,name_en',
+            'name_ar'=> 'required|max:100',
+            'name_en'=> 'required|max:100',
             'description_ar'=>'required',
             'description_en'=>'required',
             'price'=> 'required|numeric',

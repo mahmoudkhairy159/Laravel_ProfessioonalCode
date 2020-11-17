@@ -4,8 +4,9 @@
         <thead>
         <tr>
             <th scope="col">{{__('messages.offer name')}}</th>
-            <th scope="col">{{__('messages.offer price')}}</th>
             <th scope="col">{{__('messages.offer description')}}</th>
+            <th scope="col">{{__('messages.offer price')}}</th>
+            <th scope="col">{{__('messages.offer operation')}}</th>
         </tr>
         </thead>
         <tbody>
@@ -14,6 +15,9 @@
                 <td>{{$offer->name}}</td>
                 <td>{{$offer->description}}</td>
                 <td>{{$offer->price}}</td>
+                <td> <a href="{{route('offers.edit',$offer->id)}}" class="btn btn-primary">{{__('messages.edit')}}</a> </td>
+
+
             </tr>
 
         @endforeach

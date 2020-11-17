@@ -24,17 +24,13 @@ class OfferController extends Controller
 
     }
 
+
     public function create()
     {
         return view('offers.createOfferForm');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(OfferRequest $request)
     {
         //Validate
@@ -80,42 +76,43 @@ class OfferController extends Controller
         return $messages;
     }*/
 
+
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
-        //
+        $offer=Offer::find($id);
+        if(! $offer){
+            return redirect()->back();
+        }
+        return view('offers.editOfferForm')->with('offer',$offer);
+
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+
+    public function update(OfferRequest $request, $id)
     {
-        //
+        $offer=Offer::find($id);
+        if(! $offer){
+            return redirect()->back();
+        }
+        $offer->update([
+            'name_ar'=> $request->name_ar,
+            'description_ar'=>$request->description_ar,
+            'name_en'=> $request->name_en,
+            'description_en'=>$request->description_en,
+            'price'=> $request->price,
+        ]);
+        return redirect(route('offers.index'));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
-        //
+
     }
 }
