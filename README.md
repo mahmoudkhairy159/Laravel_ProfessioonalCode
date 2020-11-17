@@ -6,7 +6,7 @@
 ## Laravel task scheduler --> user expiration
 ## Send Daily Emails using laravel task schedualer
 ## Laravel Validation 
-##Laravel How to make Multi Language site using (mcamara Package)
+## Laravel How to make Multi Language site using (mcamara Package)
 https://github.com/mcamara/laravel-localization
 
 
