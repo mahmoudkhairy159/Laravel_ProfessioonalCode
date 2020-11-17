@@ -8,7 +8,7 @@
 ## Laravel Validation 
 ## Laravel How to make Multi Language site using (mcamara Package)
 https://github.com/mcamara/laravel-localization
-## Laravel save and retrive and view multilanguage data in database
+## Laravel save and update and retrive and view multilanguage data in database
 
 
 
