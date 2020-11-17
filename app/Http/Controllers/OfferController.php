@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\OfferRequest;
 use App\Models\Offer;
 use Dotenv\Validator;
 use Illuminate\Http\Request;
@@ -25,15 +26,16 @@ class OfferController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(OfferRequest $request)
     {
         //Validate
-        $rules=$this->getRules();
-        $messages=$this->getMessages();
+        /*$rules=$this->getRules();
+       $messages=$this->getMessages();
         $validator= \Illuminate\Support\Facades\Validator::make($request->all(),$rules,$messages);
         if($validator->fails()){
             return redirect()->back()->withErrors($validator)->withInput($request->all());
-        }
+        }*/
+
 
         //insert
         Offer::create([
@@ -44,6 +46,7 @@ class OfferController extends Controller
         return redirect(route('home'));
     }
 
+    /*
     private function getRules(){
         $rules=[
             'name'=> 'required|max:100|unique:offers,name',
@@ -63,7 +66,7 @@ class OfferController extends Controller
 
         ];
         return $messages;
-    }
+    }*/
 
     public function show($id)
     {
