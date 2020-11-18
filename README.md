@@ -9,6 +9,8 @@
 ## Laravel How to make Multi Language site using (mcamara Package)
 https://github.com/mcamara/laravel-localization
 ## Laravel save and update and retrive and view multilanguage data in database
+## File Storage using (Traits)-->upload Images
+
 
 
 
