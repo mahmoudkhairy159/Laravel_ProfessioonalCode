@@ -81,7 +81,13 @@ class OfferController extends Controller
 
     public function show($id)
     {
-        //
+        $offer=Offer::find($id,[
+            'id',
+            'name_'.LaravelLocalization::getCurrentLocale() . ' as name',
+            'description_'.LaravelLocalization::getCurrentLocale() .' as description' ,
+            'price',
+            'photo']);
+        return view('offers.showOffer')->with('offer',$offer);
     }
 
 
