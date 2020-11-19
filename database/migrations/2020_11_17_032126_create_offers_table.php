@@ -21,6 +21,9 @@ class CreateOffersTable extends Migration
             $table->string('description_en');
             $table->string('description_ar');
             $table->string('photo');
+            $table->unsignedBigInteger('viewCount')->default(0);
+
+
 
             $table->timestamps();
         });

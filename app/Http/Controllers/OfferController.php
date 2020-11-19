@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\OfferViewer;
 use App\Http\Requests\OfferRequest;
 use App\Models\Offer;
 use Dotenv\Validator;
@@ -86,7 +87,9 @@ class OfferController extends Controller
             'name_'.LaravelLocalization::getCurrentLocale() . ' as name',
             'description_'.LaravelLocalization::getCurrentLocale() .' as description' ,
             'price',
-            'photo']);
+            'photo',
+            'viewCount']);
+        event(new OfferViewer($offer));
         return view('offers.showOffer')->with('offer',$offer);
     }
 

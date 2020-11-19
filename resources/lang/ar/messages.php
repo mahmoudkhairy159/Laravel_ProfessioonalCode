@@ -18,6 +18,7 @@ return [
     'offer description'=>'وصف العرض',
     'offer operation'=>'العملية',
     'edit'=>'تحديث البيانات',
+    'show'=>'اظهار العرض',
 
     'offer name ar' =>'اسم العرض باللغة العربية',
     'offer name en' =>'اسم العرض باللغة الانجليزية',

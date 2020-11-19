@@ -23,7 +23,7 @@ Route::get('callback/{service}','SocialController@callback');
 
 
 Route::group(['prefix'=>LaravelLocalization::setLocale() ,
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath','auth' ]
 ], function (){
     Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
     Route::resource('offers','OfferController');

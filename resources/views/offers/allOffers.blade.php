@@ -18,8 +18,7 @@
                 <td>{{$offer->description}}</td>
                 <td>{{$offer->price}}</td>
                 <td> <a href="{{route('offers.edit',$offer->id)}}" class="btn btn-primary">{{__('messages.edit')}}</a> </td>
-
-
+                <td> <a href="{{route('offers.show',$offer->id)}}" class="btn btn-primary">{{__('messages.show')}}</a> </td>
             </tr>
 
         @endforeach
