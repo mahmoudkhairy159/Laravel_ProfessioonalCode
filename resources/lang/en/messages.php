@@ -23,7 +23,11 @@ return [
     'offer name en'=>'Offer Name  in English',
     'offer description ar'=>'Offer Description in Arabic',
     'offer description en'=>'Offer Description in English',
-    'offer upload photo'=>'offer upload photo'
+    'offer upload photo'=>'offer upload photo',
+
+    'current price'=>'current price',
+    'views count'=>'views count',
+    '$'=>'$',
 
 
 ];

@@ -8,8 +8,8 @@
                     <div class="details col-md-6">
                         <h3 class="offer-title"> {{$offer->name}}</h3>
                         <p class="product-description">{{$offer->description}}</p>
-                        <h4 class="price">current price: <span>{{$offer->price}}$</span></h4>
-                        <h5 class="price">views count: <span>{{$offer->viewCount}}</span></h5>
+                        <h4 class="price">{{__('messages.current price')}}: <span>{{$offer->price}}{{__('messages.$')}}</span></h4>
+                        <h5 class="price">{{__('messages.views count')}}: <span>{{$offer->viewCount}}</span></h5>
                     </div>
                 </div>
             </div>

@@ -26,6 +26,10 @@ return [
     'offer description en'=>' وصف العرض  باللغة الانجليزية',
     'offer upload photo'=>'ادخل صورة العرض',
 
+    'current price'=>'السعر الحالي',
+    'views count'=>'عدد المشاهدات',
+    '$'=>'جنيه',
+
 
 
 
