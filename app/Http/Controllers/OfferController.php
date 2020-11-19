@@ -19,7 +19,8 @@ class OfferController extends Controller
             'id',
             'name_'.LaravelLocalization::getCurrentLocale() . ' as name',
             'description_'.LaravelLocalization::getCurrentLocale() .' as description' ,
-            'price')->get();
+            'price',
+            'photo')->get();
         return view('offers.allOffers')->with('offers',$offers);
 
     }
@@ -49,6 +50,7 @@ class OfferController extends Controller
             'name_en'=> $request->name_en,
             'description_en'=>$request->description_en,
             'price'=> $request->price,
+            'photo'=>$request->photo->store('images/offers','public'),
 
         ]);
         return redirect(route('home'));
@@ -100,6 +102,7 @@ class OfferController extends Controller
         if(! $offer){
             return redirect()->back();
         }
+
         $offer->update([
             'name_ar'=> $request->name_ar,
             'description_ar'=>$request->description_ar,
@@ -107,6 +110,14 @@ class OfferController extends Controller
             'description_en'=>$request->description_en,
             'price'=> $request->price,
         ]);
+        if($request->hasFile('photo')) {
+            //delete old photo from storage
+            Storage::disk('public')->delete($offer->photo);
+            //adding new photo
+            $offer->update([
+                'photo' => $request->photo->store('images/offers', 'public'),
+            ]);
+        }
         return redirect(route('offers.index'));
     }
 

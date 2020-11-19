@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <form method="post" action="{{route('offers.store')}}">
+    <form method="post" action="{{route('offers.store')}}" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="offerName">{{__('messages.offer name en')}}</label>
@@ -36,6 +36,13 @@
             <label for="offerPrice">{{__('messages.offer price')}}</label>
             <input type="text" class="form-control" id="offerPrice" name="price" placeholder="Enter offer price">
             @error('price')
+            <small class="form-text text-muted">{{$message}}</small>
+            @enderror
+        </div>
+        <div class="form-group">
+            <label for="offerPhoto">{{__('messages.offer upload photo')}}</label>
+            <input type="file" class="form-control" id="offerPrice" name="photo" >
+            @error('photo')
             <small class="form-text text-muted">{{$message}}</small>
             @enderror
         </div>

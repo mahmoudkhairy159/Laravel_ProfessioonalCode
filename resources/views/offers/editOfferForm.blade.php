@@ -40,6 +40,18 @@
             <small class="form-text text-muted">{{$message}}</small>
             @enderror
         </div>
+        <div class="form-group">
+            <img src="{{ asset('storage/'.$offer->photo) }}" class="card-img-top" style="width: 18rem;" >
+        </div>
+
+        <div class="form-group">
+            <label for="offerPhoto">{{__('messages.offer upload photo')}}</label>
+            <input type="file" class="form-control" id="offerPhoto" name="photo" >
+            @error('photo')
+            <small class="form-text text-muted">{{$message}}</small>
+            @enderror
+        </div>
+
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

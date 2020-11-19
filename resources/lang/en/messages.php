@@ -8,7 +8,9 @@ return [
     'description name required'=>'description name is required',
     'name must be unique '=>'Offer name is already exist',
     'price must be numeric '=> 'Offer price must be numbers',
+    'offer photo required'=>'Offer photo is required',
 
+    'offer photo'=>'Offer Photo',
     'offer name'=>'Offer Name',
     'offer price'=>'Offer Price',
     'offer description'=>'Offer Description',
@@ -19,6 +21,7 @@ return [
     'offer name en'=>'Offer Name  in English',
     'offer description ar'=>'Offer Description in Arabic',
     'offer description en'=>'Offer Description in English',
+    'offer upload photo'=>'offer upload photo'
 
 
 ];

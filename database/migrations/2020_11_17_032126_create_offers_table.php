@@ -20,6 +20,8 @@ class CreateOffersTable extends Migration
             $table->string('price');
             $table->string('description_en');
             $table->string('description_ar');
+            $table->string('photo');
+
             $table->timestamps();
         });
     }

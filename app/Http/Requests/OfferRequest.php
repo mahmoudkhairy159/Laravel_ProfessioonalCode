@@ -29,6 +29,8 @@ class OfferRequest extends FormRequest
             'description_ar'=>'required',
             'description_en'=>'required',
             'price'=> 'required|numeric',
+            'photo' => 'nullable|image|max:1999',
+
         ];
     }
 
