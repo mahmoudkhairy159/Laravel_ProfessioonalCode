@@ -17,8 +17,16 @@
                 <td>{{$offer->name}}</td>
                 <td>{{$offer->description}}</td>
                 <td>{{$offer->price}}</td>
-                <td> <a href="{{route('offers.edit',$offer->id)}}" class="btn btn-primary">{{__('messages.edit')}}</a> </td>
-                <td> <a href="{{route('offers.show',$offer->id)}}" class="btn btn-primary">{{__('messages.show')}}</a> </td>
+                <td>
+                    <a href="{{route('offers.show',$offer->id)}}" class="btn btn-primary">{{__('messages.show')}}</a>
+                    <a href="{{route('offers.edit',$offer->id)}}" class="btn btn-primary">{{__('messages.edit')}}</a>
+                    <form action="{{route('offers.destroy',$offer->id)}}" method="post" class="d-inline">
+                        @csrf
+                        @method('delete')
+                        <button type="submit" class="btn btn-primary">{{__('messages.delete')}}</button>
+                    </form>
+
+                </td>
             </tr>
 
         @endforeach

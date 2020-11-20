@@ -7,6 +7,7 @@ use App\Http\Requests\OfferRequest;
 use App\Models\Offer;
 use Dotenv\Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use \Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
@@ -42,7 +43,6 @@ class OfferController extends Controller
         if($validator->fails()){
             return redirect()->back()->withErrors($validator)->withInput($request->all());
         }*/
-
 
         //insert
         Offer::create([
@@ -133,6 +133,13 @@ class OfferController extends Controller
 
     public function destroy($id)
     {
+        $offer=Offer::find($id);
+        if(! $offer){
+            return redirect()->back();
+        }
+        Storage::disk('public')->delete($offer->photo);
+        $offer->delete();
+        return redirect(route('offers.index'));
 
     }
 }

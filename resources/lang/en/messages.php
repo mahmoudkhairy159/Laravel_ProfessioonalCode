@@ -16,7 +16,8 @@ return [
     'offer description'=>'Offer Description',
     'offer operation'=>'Operation',
     'edit'=>'Edit Offer',
-    'show'=>'اظهار العرض',
+    'show'=>'Show Offer',
+    'delete'=>'Delete Offer',
 
 
     'offer name ar'=>'Offer Name  in Arabic',

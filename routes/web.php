@@ -27,6 +27,9 @@ Route::group(['prefix'=>LaravelLocalization::setLocale() ,
 ], function (){
     Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
     Route::resource('offers','OfferController');
+    //AjAX Routes
+    Route::resource('ajaxOffers','AjaxOfferController');
+
 });
 
 
