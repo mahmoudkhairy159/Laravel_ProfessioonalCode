@@ -12,6 +12,10 @@ https://github.com/mcamara/laravel-localization
 ## File Storage using (Traits)-->upload Images
 ## Events And Listeners
 ##  Insert data to database using Ajax - Ajax
+##  Delete data to database using Ajax - Ajax
+##  Update data to database using Ajax - Ajax
+
+
 
 
 
