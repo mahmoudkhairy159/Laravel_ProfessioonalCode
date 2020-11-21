@@ -31,7 +31,6 @@
         </tbody>
     </table>
 @endsection
-//AjaxDelete
 @section('scripts')
     <script>
         $(".deleteOffer").click(function(){

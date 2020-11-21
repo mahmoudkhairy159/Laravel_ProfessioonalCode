@@ -80,7 +80,11 @@ class AjaxOfferController extends Controller
      */
     public function edit($id)
     {
-        //
+        $offer=Offer::find($id);
+        if(! $offer){
+            return redirect()->back();
+        }
+        return view('ajaxOffers.editAjaxOfferForm')->with('offer',$offer);
     }
 
     /**
@@ -90,17 +94,36 @@ class AjaxOfferController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(OfferRequest $request, $id)
     {
-        //
+        $offer=Offer::find($id);
+        if(! $offer){
+            return response()->json([
+                'status' => false,
+                'msg' => 'هذ العرض غير موجود',
+            ]);        }
+
+        $offer->update([
+            'name_ar'=> $request->name_ar,
+            'description_ar'=>$request->description_ar,
+            'name_en'=> $request->name_en,
+            'description_en'=>$request->description_en,
+            'price'=> $request->price,
+        ]);
+        if($request->hasFile('photo')) {
+            //delete old photo from storage
+            Storage::disk('public')->delete($offer->photo);
+            //adding new photo
+            $offer->update([
+                'photo' => $request->photo->store('images/offers', 'public'),
+            ]);
+        }
+        //return redirect(route('offers.index'));
+        return response()->json($offer);
+
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
 
