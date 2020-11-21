@@ -5,17 +5,21 @@ namespace App\Http\Controllers;
 use App\Http\Requests\OfferRequest;
 use App\Models\Offer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class AjaxOfferController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+        $offers=Offer::select(
+            'id',
+            'name_'.LaravelLocalization::getCurrentLocale() . ' as name',
+            'description_'.LaravelLocalization::getCurrentLocale() .' as description' ,
+            'price',
+            'photo')->get();
+        return view('ajaxOffers.allAjaxOffers')->with('offers',$offers);
     }
 
 
@@ -99,6 +103,13 @@ class AjaxOfferController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+        $offer = Offer::find($id);
+        $offer->delete();
+       return response()->json([
+            'success' => 'Record has been deleted successfully!'
+        ]);
+
+
     }
 }

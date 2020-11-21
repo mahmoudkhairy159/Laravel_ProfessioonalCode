@@ -29,7 +29,6 @@ Route::group(['prefix'=>LaravelLocalization::setLocale() ,
     Route::resource('offers','OfferController');
     //AjAX Routes
     Route::resource('ajaxOffers','AjaxOfferController');
-
 });
 
 
