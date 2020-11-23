@@ -15,6 +15,7 @@ https://github.com/mcamara/laravel-localization
 ##  Delete data to database using Ajax - Ajax
 ##  Update data to database using Ajax - Ajax
 ## Laravel Middleware
+## Laravel multi guards multiple Athentication
 
 
 
