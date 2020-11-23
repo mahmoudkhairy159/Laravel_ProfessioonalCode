@@ -14,6 +14,7 @@ https://github.com/mcamara/laravel-localization
 ##  Insert data to database using Ajax - Ajax
 ##  Delete data to database using Ajax - Ajax
 ##  Update data to database using Ajax - Ajax
+## Laravel Middleware
 
 
 
