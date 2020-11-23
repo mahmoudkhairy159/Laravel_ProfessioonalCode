@@ -29,7 +29,16 @@ Route::group(['prefix'=>LaravelLocalization::setLocale() ,
     Route::resource('offers','OfferController');
     //AjAX Routes
     Route::resource('ajaxOffers','AjaxOfferController');
+
+    //Authentication and guards (middleware)
+    Route::group(['middleware'=>'checkAge','namespace'=>'Auth'],function (){
+        Route::get('adult/','CustomAuthController@adult');
+    });
+
 });
+
+
+
 
 
 
