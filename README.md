@@ -22,6 +22,9 @@ https://github.com/mcamara/laravel-localization
 ### many to many 
 ### has one through 
 ### has many through 
+## Laravel Pagination
+## Local and Global Scopes
+
 
 
 
