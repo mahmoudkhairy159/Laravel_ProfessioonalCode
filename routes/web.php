@@ -35,7 +35,14 @@ Route::group(['prefix'=>LaravelLocalization::setLocale() ,
         Route::get('adult/','CustomAuthController@adult');
     });
 
+    Route::get('site/','Auth\CustomAuthController@site')->middleware('auth:web')->name('site');
+    Route::get('admin/','Auth\CustomAuthController@admin')->middleware('auth:admin')->name('admin');
+
 });
+Route::get('admin/login','Auth\CustomAuthController@loginAdmin')->name('admin.login');
+Route::post('admin/login','Auth\CustomAuthController@checkAdminLogin')->name('checkAdminLogin');
+
+
 
 
 

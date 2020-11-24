@@ -1854,7 +1854,7 @@ function deepMerge(/* obj1, obj2, obj3, ... */) {
 }
 
 /**
- * Extends object a by mutably adding to it the properties of object b.
+ * Extends object a by mutably adding to it the properties of object adminLogin.blade.php.blade.php.
  *
  * @param {Object} a The object to be extended
  * @param {Object} b The object to copy properties from
@@ -7302,7 +7302,7 @@ function addHandle( attrs, handler ) {
  * Checks document order of two siblings
  * @param {Element} a
  * @param {Element} b
- * @returns {Number} Returns less than 0 if a precedes b, greater than 0 if a follows b
+ * @returns {Number} Returns less than 0 if a precedes adminLogin.blade.php.blade.php, greater than 0 if a follows adminLogin.blade.php.blade.php
  */
 function siblingCheck( a, b ) {
 	var cur = b && a,
@@ -7314,7 +7314,7 @@ function siblingCheck( a, b ) {
 		return diff;
 	}
 
-	// Check if b follows a
+	// Check if adminLogin.blade.php follows a
 	if ( cur ) {
 		while ( ( cur = cur.nextSibling ) ) {
 			if ( cur === b ) {
@@ -17462,8 +17462,8 @@ return jQuery;
       reOptMod = rsModifier + '?',
       rsOptVar = '[' + rsVarRange + ']?',
       rsOptJoin = '(?:' + rsZWJ + '(?:' + [rsNonAstral, rsRegional, rsSurrPair].join('|') + ')' + rsOptVar + reOptMod + ')*',
-      rsOrdLower = '\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])',
-      rsOrdUpper = '\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])',
+      rsOrdLower = '\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\adminLogin.blade.php|[A-Z_])',
+      rsOrdUpper = '\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\adminLogin.blade.php|[a-z_])',
       rsSeq = rsOptVar + reOptMod + rsOptJoin,
       rsEmoji = '(?:' + [rsDingbat, rsRegional, rsSurrPair].join('|') + ')' + rsSeq,
       rsSymbol = '(?:' + [rsNonAstral + rsCombo + '?', rsCombo, rsRegional, rsSurrPair, rsAstral].join('|') + ')';
@@ -24072,11 +24072,11 @@ return jQuery;
      * @returns {Array} Returns the new array of chunks.
      * @example
      *
-     * _.chunk(['a', 'b', 'c', 'd'], 2);
-     * // => [['a', 'b'], ['c', 'd']]
+     * _.chunk(['a', 'adminLogin.blade.php.blade.php', 'c', 'd'], 2);
+     * // => [['a', 'adminLogin.blade.php.blade.php'], ['c', 'd']]
      *
-     * _.chunk(['a', 'b', 'c', 'd'], 3);
-     * // => [['a', 'b', 'c'], ['d']]
+     * _.chunk(['a', 'adminLogin.blade.php.blade.php', 'c', 'd'], 3);
+     * // => [['a', 'adminLogin.blade.php.blade.php', 'c'], ['d']]
      */
     function chunk(array, size, guard) {
       if ((guard ? isIterateeCall(array, size, guard) : size === undefined)) {
@@ -24629,8 +24629,8 @@ return jQuery;
      * @returns {Object} Returns the new object.
      * @example
      *
-     * _.fromPairs([['a', 1], ['b', 2]]);
-     * // => { 'a': 1, 'b': 2 }
+     * _.fromPairs([['a', 1], ['adminLogin.blade.php.blade.php', 2]]);
+     * // => { 'a': 1, 'adminLogin.blade.php.blade.php': 2 }
      */
     function fromPairs(pairs) {
       var index = -1,
@@ -24827,8 +24827,8 @@ return jQuery;
      * @returns {string} Returns the joined string.
      * @example
      *
-     * _.join(['a', 'b', 'c'], '~');
-     * // => 'a~b~c'
+     * _.join(['a', 'adminLogin.blade.php.blade.php', 'c'], '~');
+     * // => 'a~adminLogin.blade.php.blade.php~c'
      */
     function join(array, separator) {
       return array == null ? '' : nativeJoin.call(array, separator);
@@ -24902,10 +24902,10 @@ return jQuery;
      * @returns {*} Returns the nth element of `array`.
      * @example
      *
-     * var array = ['a', 'b', 'c', 'd'];
+     * var array = ['a', 'adminLogin.blade.php.blade.php', 'c', 'd'];
      *
      * _.nth(array, 1);
-     * // => 'b'
+     * // => 'adminLogin.blade.php.blade.php'
      *
      * _.nth(array, -2);
      * // => 'c';
@@ -24931,11 +24931,11 @@ return jQuery;
      * @returns {Array} Returns `array`.
      * @example
      *
-     * var array = ['a', 'b', 'c', 'a', 'b', 'c'];
+     * var array = ['a', 'adminLogin.blade.php.blade.php', 'c', 'a', 'adminLogin.blade.php.blade.php', 'c'];
      *
      * _.pull(array, 'a', 'c');
      * console.log(array);
-     * // => ['b', 'b']
+     * // => ['adminLogin.blade.php.blade.php', 'adminLogin.blade.php.blade.php']
      */
     var pull = baseRest(pullAll);
 
@@ -24953,11 +24953,11 @@ return jQuery;
      * @returns {Array} Returns `array`.
      * @example
      *
-     * var array = ['a', 'b', 'c', 'a', 'b', 'c'];
+     * var array = ['a', 'adminLogin.blade.php.blade.php', 'c', 'a', 'adminLogin.blade.php.blade.php', 'c'];
      *
      * _.pullAll(array, ['a', 'c']);
      * console.log(array);
-     * // => ['b', 'b']
+     * // => ['adminLogin.blade.php.blade.php', 'adminLogin.blade.php.blade.php']
      */
     function pullAll(array, values) {
       return (array && array.length && values && values.length)
@@ -25038,14 +25038,14 @@ return jQuery;
      * @returns {Array} Returns the new array of removed elements.
      * @example
      *
-     * var array = ['a', 'b', 'c', 'd'];
+     * var array = ['a', 'adminLogin.blade.php.blade.php', 'c', 'd'];
      * var pulled = _.pullAt(array, [1, 3]);
      *
      * console.log(array);
      * // => ['a', 'c']
      *
      * console.log(pulled);
-     * // => ['b', 'd']
+     * // => ['adminLogin.blade.php.blade.php', 'd']
      */
     var pullAt = flatRest(function(array, indexes) {
       var length = array == null ? 0 : array.length,
@@ -25698,11 +25698,11 @@ return jQuery;
      * @returns {Array} Returns the new array of regrouped elements.
      * @example
      *
-     * var zipped = _.zip(['a', 'b'], [1, 2], [true, false]);
-     * // => [['a', 1, true], ['b', 2, false]]
+     * var zipped = _.zip(['a', 'adminLogin.blade.php.blade.php'], [1, 2], [true, false]);
+     * // => [['a', 1, true], ['adminLogin.blade.php.blade.php', 2, false]]
      *
      * _.unzip(zipped);
-     * // => [['a', 'b'], [1, 2], [true, false]]
+     * // => [['a', 'adminLogin.blade.php.blade.php'], [1, 2], [true, false]]
      */
     function unzip(array) {
       if (!(array && array.length)) {
@@ -25873,8 +25873,8 @@ return jQuery;
      * @returns {Array} Returns the new array of grouped elements.
      * @example
      *
-     * _.zip(['a', 'b'], [1, 2], [true, false]);
-     * // => [['a', 1, true], ['b', 2, false]]
+     * _.zip(['a', 'adminLogin.blade.php.blade.php'], [1, 2], [true, false]);
+     * // => [['a', 1, true], ['adminLogin.blade.php.blade.php', 2, false]]
      */
     var zip = baseRest(unzip);
 
@@ -25891,8 +25891,8 @@ return jQuery;
      * @returns {Object} Returns the new object.
      * @example
      *
-     * _.zipObject(['a', 'b'], [1, 2]);
-     * // => { 'a': 1, 'b': 2 }
+     * _.zipObject(['a', 'adminLogin.blade.php.blade.php'], [1, 2]);
+     * // => { 'a': 1, 'adminLogin.blade.php.blade.php': 2 }
      */
     function zipObject(props, values) {
       return baseZipObject(props || [], values || [], assignValue);
@@ -25910,8 +25910,8 @@ return jQuery;
      * @returns {Object} Returns the new object.
      * @example
      *
-     * _.zipObjectDeep(['a.b[0].c', 'a.b[1].d'], [1, 2]);
-     * // => { 'a': { 'b': [{ 'c': 1 }, { 'd': 2 }] } }
+     * _.zipObjectDeep(['a.adminLogin.blade.php.blade.php[0].c', 'a.adminLogin.blade.php.blade.php[1].d'], [1, 2]);
+     * // => { 'a': { 'adminLogin.blade.php': [{ 'c': 1 }, { 'd': 2 }] } }
      */
     function zipObjectDeep(props, values) {
       return baseZipObject(props || [], values || [], baseSet);
@@ -25932,8 +25932,8 @@ return jQuery;
      * @returns {Array} Returns the new array of grouped elements.
      * @example
      *
-     * _.zipWith([1, 2], [10, 20], [100, 200], function(a, b, c) {
-     *   return a + b + c;
+     * _.zipWith([1, 2], [10, 20], [100, 200], function(a, adminLogin.blade.php, c) {
+     *   return a + adminLogin.blade.php + c;
      * });
      * // => [111, 222]
      */
@@ -26048,9 +26048,9 @@ return jQuery;
      * @returns {Object} Returns the new `lodash` wrapper instance.
      * @example
      *
-     * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
+     * var object = { 'a': [{ 'adminLogin.blade.php': { 'c': 3 } }, 4] };
      *
-     * _(object).at(['a[0].b.c', 'a[1]']).value();
+     * _(object).at(['a[0].adminLogin.blade.php.c', 'a[1]']).value();
      * // => [3, 4]
      */
     var wrapperAt = flatRest(function(paths) {
@@ -26578,10 +26578,10 @@ return jQuery;
      * });
      * // => Logs `1` then `2`.
      *
-     * _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+     * _.forEach({ 'a': 1, 'adminLogin.blade.php': 2 }, function(value, key) {
      *   console.log(key);
      * });
-     * // => Logs 'a' then 'b' (iteration order is not guaranteed).
+     * // => Logs 'a' then 'adminLogin.blade.php' (iteration order is not guaranteed).
      */
     function forEach(collection, iteratee) {
       var func = isArray(collection) ? arrayEach : baseEach;
@@ -26668,7 +26668,7 @@ return jQuery;
      * _.includes([1, 2, 3], 1, 2);
      * // => false
      *
-     * _.includes({ 'a': 1, 'b': 2 }, 1);
+     * _.includes({ 'a': 1, 'adminLogin.blade.php': 2 }, 1);
      * // => true
      *
      * _.includes('abcd', 'bc');
@@ -26783,7 +26783,7 @@ return jQuery;
      * _.map([4, 8], square);
      * // => [16, 64]
      *
-     * _.map({ 'a': 4, 'b': 8 }, square);
+     * _.map({ 'a': 4, 'adminLogin.blade.php': 8 }, square);
      * // => [16, 64] (iteration order is not guaranteed)
      *
      * var users = [
@@ -26914,11 +26914,11 @@ return jQuery;
      * }, 0);
      * // => 3
      *
-     * _.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+     * _.reduce({ 'a': 1, 'adminLogin.blade.php': 2, 'c': 1 }, function(result, value, key) {
      *   (result[value] || (result[value] = [])).push(key);
      *   return result;
      * }, {});
-     * // => { '1': ['a', 'c'], '2': ['b'] } (iteration order is not guaranteed)
+     * // => { '1': ['a', 'c'], '2': ['adminLogin.blade.php'] } (iteration order is not guaranteed)
      */
     function reduce(collection, iteratee, accumulator) {
       var func = isArray(collection) ? arrayReduce : baseReduce,
@@ -27079,7 +27079,7 @@ return jQuery;
      * _.size([1, 2, 3]);
      * // => 3
      *
-     * _.size({ 'a': 1, 'b': 2 });
+     * _.size({ 'a': 1, 'adminLogin.blade.php': 2 });
      * // => 2
      *
      * _.size('pebbles');
@@ -27422,8 +27422,8 @@ return jQuery;
      * @returns {Function} Returns the new curried function.
      * @example
      *
-     * var abc = function(a, b, c) {
-     *   return [a, b, c];
+     * var abc = function(a, adminLogin.blade.php, c) {
+     *   return [a, adminLogin.blade.php, c];
      * };
      *
      * var curried = _.curry(abc);
@@ -27467,8 +27467,8 @@ return jQuery;
      * @returns {Function} Returns the new curried function.
      * @example
      *
-     * var abc = function(a, b, c) {
-     *   return [a, b, c];
+     * var abc = function(a, adminLogin.blade.php, c) {
+     *   return [a, adminLogin.blade.php, c];
      * };
      *
      * var curried = _.curryRight(abc);
@@ -27732,8 +27732,8 @@ return jQuery;
      *   return _.toArray(arguments);
      * });
      *
-     * flipped('a', 'b', 'c', 'd');
-     * // => ['d', 'c', 'b', 'a']
+     * flipped('a', 'adminLogin.blade.php', 'c', 'd');
+     * // => ['d', 'c', 'adminLogin.blade.php', 'a']
      */
     function flip(func) {
       return createWrap(func, WRAP_FLIP_FLAG);
@@ -27761,7 +27761,7 @@ return jQuery;
      * @returns {Function} Returns the new memoized function.
      * @example
      *
-     * var object = { 'a': 1, 'b': 2 };
+     * var object = { 'a': 1, 'adminLogin.blade.php': 2 };
      * var other = { 'c': 3, 'd': 4 };
      *
      * var values = _.memoize(_.values);
@@ -27776,9 +27776,9 @@ return jQuery;
      * // => [1, 2]
      *
      * // Modify the result cache.
-     * values.cache.set(object, ['a', 'b']);
+     * values.cache.set(object, ['a', 'adminLogin.blade.php']);
      * values(object);
-     * // => ['a', 'b']
+     * // => ['a', 'adminLogin.blade.php']
      *
      * // Replace `_.memoize.Cache`.
      * _.memoize.Cache = WeakMap;
@@ -28002,12 +28002,12 @@ return jQuery;
      * @returns {Function} Returns the new function.
      * @example
      *
-     * var rearged = _.rearg(function(a, b, c) {
-     *   return [a, b, c];
+     * var rearged = _.rearg(function(a, adminLogin.blade.php, c) {
+     *   return [a, adminLogin.blade.php, c];
      * }, [2, 0, 1]);
      *
-     * rearged('b', 'c', 'a')
-     * // => ['a', 'b', 'c']
+     * rearged('adminLogin.blade.php', 'c', 'a')
+     * // => ['a', 'adminLogin.blade.php', 'c']
      */
     var rearg = flatRest(function(func, indexes) {
       return createWrap(func, WRAP_REARG_FLAG, undefined, undefined, undefined, indexes);
@@ -28266,7 +28266,7 @@ return jQuery;
      * @see _.cloneDeep
      * @example
      *
-     * var objects = [{ 'a': 1 }, { 'b': 2 }];
+     * var objects = [{ 'a': 1 }, { 'adminLogin.blade.php': 2 }];
      *
      * var shallow = _.clone(objects);
      * console.log(shallow[0] === objects[0]);
@@ -28324,7 +28324,7 @@ return jQuery;
      * @see _.clone
      * @example
      *
-     * var objects = [{ 'a': 1 }, { 'b': 2 }];
+     * var objects = [{ 'a': 1 }, { 'adminLogin.blade.php': 2 }];
      *
      * var deep = _.cloneDeep(objects);
      * console.log(deep[0] === objects[0]);
@@ -28383,12 +28383,12 @@ return jQuery;
      * @returns {boolean} Returns `true` if `object` conforms, else `false`.
      * @example
      *
-     * var object = { 'a': 1, 'b': 2 };
+     * var object = { 'a': 1, 'adminLogin.blade.php': 2 };
      *
-     * _.conformsTo(object, { 'b': function(n) { return n > 1; } });
+     * _.conformsTo(object, { 'adminLogin.blade.php': function(n) { return n > 1; } });
      * // => true
      *
-     * _.conformsTo(object, { 'b': function(n) { return n > 2; } });
+     * _.conformsTo(object, { 'adminLogin.blade.php': function(n) { return n > 2; } });
      * // => false
      */
     function conformsTo(object, source) {
@@ -29058,12 +29058,12 @@ return jQuery;
      * @returns {boolean} Returns `true` if `object` is a match, else `false`.
      * @example
      *
-     * var object = { 'a': 1, 'b': 2 };
+     * var object = { 'a': 1, 'adminLogin.blade.php': 2 };
      *
-     * _.isMatch(object, { 'b': 2 });
+     * _.isMatch(object, { 'adminLogin.blade.php': 2 });
      * // => true
      *
-     * _.isMatch(object, { 'b': 1 });
+     * _.isMatch(object, { 'adminLogin.blade.php': 1 });
      * // => false
      */
     function isMatch(object, source) {
@@ -29550,11 +29550,11 @@ return jQuery;
      * @returns {Array} Returns the converted array.
      * @example
      *
-     * _.toArray({ 'a': 1, 'b': 2 });
+     * _.toArray({ 'a': 1, 'adminLogin.blade.php': 2 });
      * // => [1, 2]
      *
      * _.toArray('abc');
-     * // => ['a', 'b', 'c']
+     * // => ['a', 'adminLogin.blade.php', 'c']
      *
      * _.toArray(1);
      * // => []
@@ -29734,16 +29734,16 @@ return jQuery;
      * @example
      *
      * function Foo() {
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
      *
      * _.assign({ 'a': 1 }, new Foo);
-     * // => { 'a': 1, 'b': 2 }
+     * // => { 'a': 1, 'adminLogin.blade.php': 2 }
      *
      * _.assign({ 'a': 1 }, _.toPlainObject(new Foo));
-     * // => { 'a': 1, 'b': 2, 'c': 3 }
+     * // => { 'a': 1, 'adminLogin.blade.php': 2, 'c': 3 }
      */
     function toPlainObject(value) {
       return copyObject(value, keysIn(value));
@@ -29832,7 +29832,7 @@ return jQuery;
      *   this.c = 3;
      * }
      *
-     * Foo.prototype.b = 2;
+     * Foo.prototype.adminLogin.blade.php = 2;
      * Bar.prototype.d = 4;
      *
      * _.assign({ 'a': 0 }, new Foo, new Bar);
@@ -29875,11 +29875,11 @@ return jQuery;
      *   this.c = 3;
      * }
      *
-     * Foo.prototype.b = 2;
+     * Foo.prototype.adminLogin.blade.php = 2;
      * Bar.prototype.d = 4;
      *
      * _.assignIn({ 'a': 0 }, new Foo, new Bar);
-     * // => { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
+     * // => { 'a': 1, 'adminLogin.blade.php': 2, 'c': 3, 'd': 4 }
      */
     var assignIn = createAssigner(function(object, source) {
       copyObject(source, keysIn(source), object);
@@ -29911,8 +29911,8 @@ return jQuery;
      *
      * var defaults = _.partialRight(_.assignInWith, customizer);
      *
-     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
-     * // => { 'a': 1, 'b': 2 }
+     * defaults({ 'a': 1 }, { 'adminLogin.blade.php': 2 }, { 'a': 3 });
+     * // => { 'a': 1, 'adminLogin.blade.php': 2 }
      */
     var assignInWith = createAssigner(function(object, source, srcIndex, customizer) {
       copyObject(source, keysIn(source), object, customizer);
@@ -29943,8 +29943,8 @@ return jQuery;
      *
      * var defaults = _.partialRight(_.assignWith, customizer);
      *
-     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
-     * // => { 'a': 1, 'b': 2 }
+     * defaults({ 'a': 1 }, { 'adminLogin.blade.php': 2 }, { 'a': 3 });
+     * // => { 'a': 1, 'adminLogin.blade.php': 2 }
      */
     var assignWith = createAssigner(function(object, source, srcIndex, customizer) {
       copyObject(source, keys(source), object, customizer);
@@ -29962,9 +29962,9 @@ return jQuery;
      * @returns {Array} Returns the picked values.
      * @example
      *
-     * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
+     * var object = { 'a': [{ 'adminLogin.blade.php': { 'c': 3 } }, 4] };
      *
-     * _.at(object, ['a[0].b.c', 'a[1]']);
+     * _.at(object, ['a[0].adminLogin.blade.php.c', 'a[1]']);
      * // => [3, 4]
      */
     var at = flatRest(baseAt);
@@ -30026,8 +30026,8 @@ return jQuery;
      * @see _.defaultsDeep
      * @example
      *
-     * _.defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
-     * // => { 'a': 1, 'b': 2 }
+     * _.defaults({ 'a': 1 }, { 'adminLogin.blade.php': 2 }, { 'a': 3 });
+     * // => { 'a': 1, 'adminLogin.blade.php': 2 }
      */
     var defaults = baseRest(function(object, sources) {
       object = Object(object);
@@ -30076,8 +30076,8 @@ return jQuery;
      * @see _.defaults
      * @example
      *
-     * _.defaultsDeep({ 'a': { 'b': 2 } }, { 'a': { 'b': 1, 'c': 3 } });
-     * // => { 'a': { 'b': 2, 'c': 3 } }
+     * _.defaultsDeep({ 'a': { 'adminLogin.blade.php': 2 } }, { 'a': { 'adminLogin.blade.php': 1, 'c': 3 } });
+     * // => { 'a': { 'adminLogin.blade.php': 2, 'c': 3 } }
      */
     var defaultsDeep = baseRest(function(args) {
       args.push(undefined, customDefaultsMerge);
@@ -30180,7 +30180,7 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
@@ -30188,7 +30188,7 @@ return jQuery;
      * _.forIn(new Foo, function(value, key) {
      *   console.log(key);
      * });
-     * // => Logs 'a', 'b', then 'c' (iteration order is not guaranteed).
+     * // => Logs 'a', 'adminLogin.blade.php', then 'c' (iteration order is not guaranteed).
      */
     function forIn(object, iteratee) {
       return object == null
@@ -30212,7 +30212,7 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
@@ -30220,7 +30220,7 @@ return jQuery;
      * _.forInRight(new Foo, function(value, key) {
      *   console.log(key);
      * });
-     * // => Logs 'c', 'b', then 'a' assuming `_.forIn` logs 'a', 'b', then 'c'.
+     * // => Logs 'c', 'adminLogin.blade.php', then 'a' assuming `_.forIn` logs 'a', 'adminLogin.blade.php', then 'c'.
      */
     function forInRight(object, iteratee) {
       return object == null
@@ -30246,7 +30246,7 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
@@ -30254,7 +30254,7 @@ return jQuery;
      * _.forOwn(new Foo, function(value, key) {
      *   console.log(key);
      * });
-     * // => Logs 'a' then 'b' (iteration order is not guaranteed).
+     * // => Logs 'a' then 'adminLogin.blade.php' (iteration order is not guaranteed).
      */
     function forOwn(object, iteratee) {
       return object && baseForOwn(object, getIteratee(iteratee, 3));
@@ -30276,7 +30276,7 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
@@ -30284,7 +30284,7 @@ return jQuery;
      * _.forOwnRight(new Foo, function(value, key) {
      *   console.log(key);
      * });
-     * // => Logs 'b' then 'a' assuming `_.forOwn` logs 'a' then 'b'.
+     * // => Logs 'adminLogin.blade.php' then 'a' assuming `_.forOwn` logs 'a' then 'adminLogin.blade.php'.
      */
     function forOwnRight(object, iteratee) {
       return object && baseForOwnRight(object, getIteratee(iteratee, 3));
@@ -30305,13 +30305,13 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = _.constant('a');
-     *   this.b = _.constant('b');
+     *   this.adminLogin.blade.php = _.constant('adminLogin.blade.php');
      * }
      *
      * Foo.prototype.c = _.constant('c');
      *
      * _.functions(new Foo);
-     * // => ['a', 'b']
+     * // => ['a', 'adminLogin.blade.php']
      */
     function functions(object) {
       return object == null ? [] : baseFunctions(object, keys(object));
@@ -30332,13 +30332,13 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = _.constant('a');
-     *   this.b = _.constant('b');
+     *   this.adminLogin.blade.php = _.constant('adminLogin.blade.php');
      * }
      *
      * Foo.prototype.c = _.constant('c');
      *
      * _.functionsIn(new Foo);
-     * // => ['a', 'b', 'c']
+     * // => ['a', 'adminLogin.blade.php', 'c']
      */
     function functionsIn(object) {
       return object == null ? [] : baseFunctions(object, keysIn(object));
@@ -30358,15 +30358,15 @@ return jQuery;
      * @returns {*} Returns the resolved value.
      * @example
      *
-     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+     * var object = { 'a': [{ 'adminLogin.blade.php': { 'c': 3 } }] };
      *
-     * _.get(object, 'a[0].b.c');
+     * _.get(object, 'a[0].adminLogin.blade.php.c');
      * // => 3
      *
-     * _.get(object, ['a', '0', 'b', 'c']);
+     * _.get(object, ['a', '0', 'adminLogin.blade.php', 'c']);
      * // => 3
      *
-     * _.get(object, 'a.b.c', 'default');
+     * _.get(object, 'a.adminLogin.blade.php.c', 'default');
      * // => 'default'
      */
     function get(object, path, defaultValue) {
@@ -30386,16 +30386,16 @@ return jQuery;
      * @returns {boolean} Returns `true` if `path` exists, else `false`.
      * @example
      *
-     * var object = { 'a': { 'b': 2 } };
-     * var other = _.create({ 'a': _.create({ 'b': 2 }) });
+     * var object = { 'a': { 'adminLogin.blade.php': 2 } };
+     * var other = _.create({ 'a': _.create({ 'adminLogin.blade.php': 2 }) });
      *
      * _.has(object, 'a');
      * // => true
      *
-     * _.has(object, 'a.b');
+     * _.has(object, 'a.adminLogin.blade.php');
      * // => true
      *
-     * _.has(object, ['a', 'b']);
+     * _.has(object, ['a', 'adminLogin.blade.php']);
      * // => true
      *
      * _.has(other, 'a');
@@ -30417,18 +30417,18 @@ return jQuery;
      * @returns {boolean} Returns `true` if `path` exists, else `false`.
      * @example
      *
-     * var object = _.create({ 'a': _.create({ 'b': 2 }) });
+     * var object = _.create({ 'a': _.create({ 'adminLogin.blade.php': 2 }) });
      *
      * _.hasIn(object, 'a');
      * // => true
      *
-     * _.hasIn(object, 'a.b');
+     * _.hasIn(object, 'a.adminLogin.blade.php');
      * // => true
      *
-     * _.hasIn(object, ['a', 'b']);
+     * _.hasIn(object, ['a', 'adminLogin.blade.php']);
      * // => true
      *
-     * _.hasIn(object, 'b');
+     * _.hasIn(object, 'adminLogin.blade.php');
      * // => false
      */
     function hasIn(object, path) {
@@ -30448,10 +30448,10 @@ return jQuery;
      * @returns {Object} Returns the new inverted object.
      * @example
      *
-     * var object = { 'a': 1, 'b': 2, 'c': 1 };
+     * var object = { 'a': 1, 'adminLogin.blade.php': 2, 'c': 1 };
      *
      * _.invert(object);
-     * // => { '1': 'c', '2': 'b' }
+     * // => { '1': 'c', '2': 'adminLogin.blade.php' }
      */
     var invert = createInverter(function(result, value, key) {
       if (value != null &&
@@ -30478,15 +30478,15 @@ return jQuery;
      * @returns {Object} Returns the new inverted object.
      * @example
      *
-     * var object = { 'a': 1, 'b': 2, 'c': 1 };
+     * var object = { 'a': 1, 'adminLogin.blade.php': 2, 'c': 1 };
      *
      * _.invertBy(object);
-     * // => { '1': ['a', 'c'], '2': ['b'] }
+     * // => { '1': ['a', 'c'], '2': ['adminLogin.blade.php'] }
      *
      * _.invertBy(object, function(value) {
      *   return 'group' + value;
      * });
-     * // => { 'group1': ['a', 'c'], 'group2': ['b'] }
+     * // => { 'group1': ['a', 'c'], 'group2': ['adminLogin.blade.php'] }
      */
     var invertBy = createInverter(function(result, value, key) {
       if (value != null &&
@@ -30514,9 +30514,9 @@ return jQuery;
      * @returns {*} Returns the result of the invoked method.
      * @example
      *
-     * var object = { 'a': [{ 'b': { 'c': [1, 2, 3, 4] } }] };
+     * var object = { 'a': [{ 'adminLogin.blade.php': { 'c': [1, 2, 3, 4] } }] };
      *
-     * _.invoke(object, 'a[0].b.c.slice', 1, 3);
+     * _.invoke(object, 'a[0].adminLogin.blade.php.c.slice', 1, 3);
      * // => [2, 3]
      */
     var invoke = baseRest(baseInvoke);
@@ -30538,13 +30538,13 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
      *
      * _.keys(new Foo);
-     * // => ['a', 'b'] (iteration order is not guaranteed)
+     * // => ['a', 'adminLogin.blade.php'] (iteration order is not guaranteed)
      *
      * _.keys('hi');
      * // => ['0', '1']
@@ -30568,13 +30568,13 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
      *
      * _.keysIn(new Foo);
-     * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+     * // => ['a', 'adminLogin.blade.php', 'c'] (iteration order is not guaranteed)
      */
     function keysIn(object) {
       return isArrayLike(object) ? arrayLikeKeys(object, true) : baseKeysIn(object);
@@ -30596,7 +30596,7 @@ return jQuery;
      * @see _.mapValues
      * @example
      *
-     * _.mapKeys({ 'a': 1, 'b': 2 }, function(value, key) {
+     * _.mapKeys({ 'a': 1, 'adminLogin.blade.php': 2 }, function(value, key) {
      *   return key + value;
      * });
      * // => { 'a1': 1, 'b2': 2 }
@@ -30670,7 +30670,7 @@ return jQuery;
      * @example
      *
      * var object = {
-     *   'a': [{ 'b': 2 }, { 'd': 4 }]
+     *   'a': [{ 'adminLogin.blade.php': 2 }, { 'd': 4 }]
      * };
      *
      * var other = {
@@ -30678,7 +30678,7 @@ return jQuery;
      * };
      *
      * _.merge(object, other);
-     * // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
+     * // => { 'a': [{ 'adminLogin.blade.php': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
      */
     var merge = createAssigner(function(object, source, srcIndex) {
       baseMerge(object, source, srcIndex);
@@ -30709,11 +30709,11 @@ return jQuery;
      *   }
      * }
      *
-     * var object = { 'a': [1], 'b': [2] };
-     * var other = { 'a': [3], 'b': [4] };
+     * var object = { 'a': [1], 'adminLogin.blade.php': [2] };
+     * var other = { 'a': [3], 'adminLogin.blade.php': [4] };
      *
      * _.mergeWith(object, other, customizer);
-     * // => { 'a': [1, 3], 'b': [2, 4] }
+     * // => { 'a': [1, 3], 'adminLogin.blade.php': [2, 4] }
      */
     var mergeWith = createAssigner(function(object, source, srcIndex, customizer) {
       baseMerge(object, source, srcIndex, customizer);
@@ -30734,10 +30734,10 @@ return jQuery;
      * @returns {Object} Returns the new object.
      * @example
      *
-     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+     * var object = { 'a': 1, 'adminLogin.blade.php': '2', 'c': 3 };
      *
      * _.omit(object, ['a', 'c']);
-     * // => { 'b': '2' }
+     * // => { 'adminLogin.blade.php': '2' }
      */
     var omit = flatRest(function(object, paths) {
       var result = {};
@@ -30776,10 +30776,10 @@ return jQuery;
      * @returns {Object} Returns the new object.
      * @example
      *
-     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+     * var object = { 'a': 1, 'adminLogin.blade.php': '2', 'c': 3 };
      *
      * _.omitBy(object, _.isNumber);
-     * // => { 'b': '2' }
+     * // => { 'adminLogin.blade.php': '2' }
      */
     function omitBy(object, predicate) {
       return pickBy(object, negate(getIteratee(predicate)));
@@ -30797,7 +30797,7 @@ return jQuery;
      * @returns {Object} Returns the new object.
      * @example
      *
-     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+     * var object = { 'a': 1, 'adminLogin.blade.php': '2', 'c': 3 };
      *
      * _.pick(object, ['a', 'c']);
      * // => { 'a': 1, 'c': 3 }
@@ -30819,7 +30819,7 @@ return jQuery;
      * @returns {Object} Returns the new object.
      * @example
      *
-     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+     * var object = { 'a': 1, 'adminLogin.blade.php': '2', 'c': 3 };
      *
      * _.pickBy(object, _.isNumber);
      * // => { 'a': 1, 'c': 3 }
@@ -30852,18 +30852,18 @@ return jQuery;
      * @returns {*} Returns the resolved value.
      * @example
      *
-     * var object = { 'a': [{ 'b': { 'c1': 3, 'c2': _.constant(4) } }] };
+     * var object = { 'a': [{ 'adminLogin.blade.php': { 'c1': 3, 'c2': _.constant(4) } }] };
      *
-     * _.result(object, 'a[0].b.c1');
+     * _.result(object, 'a[0].adminLogin.blade.php.c1');
      * // => 3
      *
-     * _.result(object, 'a[0].b.c2');
+     * _.result(object, 'a[0].adminLogin.blade.php.c2');
      * // => 4
      *
-     * _.result(object, 'a[0].b.c3', 'default');
+     * _.result(object, 'a[0].adminLogin.blade.php.c3', 'default');
      * // => 'default'
      *
-     * _.result(object, 'a[0].b.c3', _.constant('default'));
+     * _.result(object, 'a[0].adminLogin.blade.php.c3', _.constant('default'));
      * // => 'default'
      */
     function result(object, path, defaultValue) {
@@ -30906,10 +30906,10 @@ return jQuery;
      * @returns {Object} Returns `object`.
      * @example
      *
-     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+     * var object = { 'a': [{ 'adminLogin.blade.php': { 'c': 3 } }] };
      *
-     * _.set(object, 'a[0].b.c', 4);
-     * console.log(object.a[0].b.c);
+     * _.set(object, 'a[0].adminLogin.blade.php.c', 4);
+     * console.log(object.a[0].adminLogin.blade.php.c);
      * // => 4
      *
      * _.set(object, ['x', '0', 'y', 'z'], 5);
@@ -30965,13 +30965,13 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
      *
      * _.toPairs(new Foo);
-     * // => [['a', 1], ['b', 2]] (iteration order is not guaranteed)
+     * // => [['a', 1], ['adminLogin.blade.php', 2]] (iteration order is not guaranteed)
      */
     var toPairs = createToPairs(keys);
 
@@ -30991,13 +30991,13 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
      *
      * _.toPairsIn(new Foo);
-     * // => [['a', 1], ['b', 2], ['c', 3]] (iteration order is not guaranteed)
+     * // => [['a', 1], ['adminLogin.blade.php', 2], ['c', 3]] (iteration order is not guaranteed)
      */
     var toPairsIn = createToPairs(keysIn);
 
@@ -31026,10 +31026,10 @@ return jQuery;
      * }, []);
      * // => [4, 9]
      *
-     * _.transform({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+     * _.transform({ 'a': 1, 'adminLogin.blade.php': 2, 'c': 1 }, function(result, value, key) {
      *   (result[value] || (result[value] = [])).push(key);
      * }, {});
-     * // => { '1': ['a', 'c'], '2': ['b'] }
+     * // => { '1': ['a', 'c'], '2': ['adminLogin.blade.php'] }
      */
     function transform(object, iteratee, accumulator) {
       var isArr = isArray(object),
@@ -31068,18 +31068,18 @@ return jQuery;
      * @returns {boolean} Returns `true` if the property is deleted, else `false`.
      * @example
      *
-     * var object = { 'a': [{ 'b': { 'c': 7 } }] };
-     * _.unset(object, 'a[0].b.c');
+     * var object = { 'a': [{ 'adminLogin.blade.php': { 'c': 7 } }] };
+     * _.unset(object, 'a[0].adminLogin.blade.php.c');
      * // => true
      *
      * console.log(object);
-     * // => { 'a': [{ 'b': {} }] };
+     * // => { 'a': [{ 'adminLogin.blade.php': {} }] };
      *
-     * _.unset(object, ['a', '0', 'b', 'c']);
+     * _.unset(object, ['a', '0', 'adminLogin.blade.php', 'c']);
      * // => true
      *
      * console.log(object);
-     * // => { 'a': [{ 'b': {} }] };
+     * // => { 'a': [{ 'adminLogin.blade.php': {} }] };
      */
     function unset(object, path) {
       return object == null ? true : baseUnset(object, path);
@@ -31102,10 +31102,10 @@ return jQuery;
      * @returns {Object} Returns `object`.
      * @example
      *
-     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+     * var object = { 'a': [{ 'adminLogin.blade.php': { 'c': 3 } }] };
      *
-     * _.update(object, 'a[0].b.c', function(n) { return n * n; });
-     * console.log(object.a[0].b.c);
+     * _.update(object, 'a[0].adminLogin.blade.php.c', function(n) { return n * n; });
+     * console.log(object.a[0].adminLogin.blade.php.c);
      * // => 9
      *
      * _.update(object, 'x[0].y.z', function(n) { return n ? n + 1 : 0; });
@@ -31160,7 +31160,7 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
@@ -31191,7 +31191,7 @@ return jQuery;
      *
      * function Foo() {
      *   this.a = 1;
-     *   this.b = 2;
+     *   this.adminLogin.blade.php = 2;
      * }
      *
      * Foo.prototype.c = 3;
@@ -31446,10 +31446,10 @@ return jQuery;
      * _.endsWith('abc', 'c');
      * // => true
      *
-     * _.endsWith('abc', 'b');
+     * _.endsWith('abc', 'adminLogin.blade.php');
      * // => false
      *
-     * _.endsWith('abc', 'b', 2);
+     * _.endsWith('abc', 'adminLogin.blade.php', 2);
      * // => true
      */
     function endsWith(string, target, position) {
@@ -31827,8 +31827,8 @@ return jQuery;
      * @returns {Array} Returns the string segments.
      * @example
      *
-     * _.split('a-b-c', '-', 2);
-     * // => ['a', 'b']
+     * _.split('a-adminLogin.blade.php-c', '-', 2);
+     * // => ['a', 'adminLogin.blade.php']
      */
     function split(string, separator, limit) {
       if (limit && typeof limit != 'number' && isIterateeCall(string, separator, limit)) {
@@ -31893,10 +31893,10 @@ return jQuery;
      * _.startsWith('abc', 'a');
      * // => true
      *
-     * _.startsWith('abc', 'b');
+     * _.startsWith('abc', 'adminLogin.blade.php');
      * // => false
      *
-     * _.startsWith('abc', 'b', 1);
+     * _.startsWith('abc', 'adminLogin.blade.php', 1);
      * // => true
      */
     function startsWith(string, target, position) {
@@ -31954,9 +31954,9 @@ return jQuery;
      * // => 'hello fred!'
      *
      * // Use the HTML "escape" delimiter to escape data property values.
-     * var compiled = _.template('<b><%- value %></b>');
+     * var compiled = _.template('<adminLogin.blade.php><%- value %></adminLogin.blade.php>');
      * compiled({ 'value': '<script>' });
-     * // => '<b>&lt;script&gt;</b>'
+     * // => '<adminLogin.blade.php>&lt;script&gt;</adminLogin.blade.php>'
      *
      * // Use the "evaluate" delimiter to execute JavaScript and generate HTML.
      * var compiled = _.template('<% _.forEach(users, function(user) { %><li><%- user %></li><% }); %>');
@@ -32551,17 +32551,17 @@ return jQuery;
      *
      * var func = _.cond([
      *   [_.matches({ 'a': 1 }),           _.constant('matches A')],
-     *   [_.conforms({ 'b': _.isNumber }), _.constant('matches B')],
+     *   [_.conforms({ 'adminLogin.blade.php': _.isNumber }), _.constant('matches B')],
      *   [_.stubTrue,                      _.constant('no match')]
      * ]);
      *
-     * func({ 'a': 1, 'b': 2 });
+     * func({ 'a': 1, 'adminLogin.blade.php': 2 });
      * // => 'matches A'
      *
-     * func({ 'a': 0, 'b': 1 });
+     * func({ 'a': 0, 'adminLogin.blade.php': 1 });
      * // => 'matches B'
      *
-     * func({ 'a': '1', 'b': '2' });
+     * func({ 'a': '1', 'adminLogin.blade.php': '2' });
      * // => 'no match'
      */
     function cond(pairs) {
@@ -32603,12 +32603,12 @@ return jQuery;
      * @example
      *
      * var objects = [
-     *   { 'a': 2, 'b': 1 },
-     *   { 'a': 1, 'b': 2 }
+     *   { 'a': 2, 'adminLogin.blade.php': 1 },
+     *   { 'a': 1, 'adminLogin.blade.php': 2 }
      * ];
      *
-     * _.filter(objects, _.conforms({ 'b': function(n) { return n > 1; } }));
-     * // => [{ 'a': 1, 'b': 2 }]
+     * _.filter(objects, _.conforms({ 'adminLogin.blade.php': function(n) { return n > 1; } }));
+     * // => [{ 'a': 1, 'adminLogin.blade.php': 2 }]
      */
     function conforms(source) {
       return baseConforms(baseClone(source, CLONE_DEEP_FLAG));
@@ -32800,16 +32800,16 @@ return jQuery;
      * @example
      *
      * var objects = [
-     *   { 'a': 1, 'b': 2, 'c': 3 },
-     *   { 'a': 4, 'b': 5, 'c': 6 }
+     *   { 'a': 1, 'adminLogin.blade.php': 2, 'c': 3 },
+     *   { 'a': 4, 'adminLogin.blade.php': 5, 'c': 6 }
      * ];
      *
      * _.filter(objects, _.matches({ 'a': 4, 'c': 6 }));
-     * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
+     * // => [{ 'a': 4, 'adminLogin.blade.php': 5, 'c': 6 }]
      *
      * // Checking for several possible values
      * _.filter(objects, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
-     * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
+     * // => [{ 'a': 1, 'adminLogin.blade.php': 2, 'c': 3 }, { 'a': 4, 'adminLogin.blade.php': 5, 'c': 6 }]
      */
     function matches(source) {
       return baseMatches(baseClone(source, CLONE_DEEP_FLAG));
@@ -32837,16 +32837,16 @@ return jQuery;
      * @example
      *
      * var objects = [
-     *   { 'a': 1, 'b': 2, 'c': 3 },
-     *   { 'a': 4, 'b': 5, 'c': 6 }
+     *   { 'a': 1, 'adminLogin.blade.php': 2, 'c': 3 },
+     *   { 'a': 4, 'adminLogin.blade.php': 5, 'c': 6 }
      * ];
      *
      * _.find(objects, _.matchesProperty('a', 4));
-     * // => { 'a': 4, 'b': 5, 'c': 6 }
+     * // => { 'a': 4, 'adminLogin.blade.php': 5, 'c': 6 }
      *
      * // Checking for several possible values
      * _.filter(objects, _.overSome([_.matchesProperty('a', 1), _.matchesProperty('a', 4)]));
-     * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
+     * // => [{ 'a': 1, 'adminLogin.blade.php': 2, 'c': 3 }, { 'a': 4, 'adminLogin.blade.php': 5, 'c': 6 }]
      */
     function matchesProperty(path, srcValue) {
       return baseMatchesProperty(path, baseClone(srcValue, CLONE_DEEP_FLAG));
@@ -32866,14 +32866,14 @@ return jQuery;
      * @example
      *
      * var objects = [
-     *   { 'a': { 'b': _.constant(2) } },
-     *   { 'a': { 'b': _.constant(1) } }
+     *   { 'a': { 'adminLogin.blade.php': _.constant(2) } },
+     *   { 'a': { 'adminLogin.blade.php': _.constant(1) } }
      * ];
      *
-     * _.map(objects, _.method('a.b'));
+     * _.map(objects, _.method('a.adminLogin.blade.php'));
      * // => [2, 1]
      *
-     * _.map(objects, _.method(['a', 'b']));
+     * _.map(objects, _.method(['a', 'adminLogin.blade.php']));
      * // => [2, 1]
      */
     var method = baseRest(function(path, args) {
@@ -32897,7 +32897,7 @@ return jQuery;
      * @example
      *
      * var array = _.times(3, _.constant),
-     *     object = { 'a': array, 'b': array, 'c': array };
+     *     object = { 'a': array, 'adminLogin.blade.php': array, 'c': array };
      *
      * _.map(['a[2]', 'c[0]'], _.methodOf(object));
      * // => [2, 0]
@@ -33032,11 +33032,11 @@ return jQuery;
      * @example
      *
      * var func = _.nthArg(1);
-     * func('a', 'b', 'c', 'd');
-     * // => 'b'
+     * func('a', 'adminLogin.blade.php', 'c', 'd');
+     * // => 'adminLogin.blade.php'
      *
      * var func = _.nthArg(-2);
-     * func('a', 'b', 'c', 'd');
+     * func('a', 'adminLogin.blade.php', 'c', 'd');
      * // => 'c'
      */
     function nthArg(n) {
@@ -33141,14 +33141,14 @@ return jQuery;
      * @example
      *
      * var objects = [
-     *   { 'a': { 'b': 2 } },
-     *   { 'a': { 'b': 1 } }
+     *   { 'a': { 'adminLogin.blade.php': 2 } },
+     *   { 'a': { 'adminLogin.blade.php': 1 } }
      * ];
      *
-     * _.map(objects, _.property('a.b'));
+     * _.map(objects, _.property('a.adminLogin.blade.php'));
      * // => [2, 1]
      *
-     * _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
+     * _.map(_.sortBy(objects, _.property(['a', 'adminLogin.blade.php'])), 'a.adminLogin.blade.php');
      * // => [1, 2]
      */
     function property(path) {
@@ -33168,7 +33168,7 @@ return jQuery;
      * @example
      *
      * var array = [0, 1, 2],
-     *     object = { 'a': array, 'b': array, 'c': array };
+     *     object = { 'a': array, 'adminLogin.blade.php': array, 'c': array };
      *
      * _.map(['a[2]', 'c[0]'], _.propertyOf(object));
      * // => [2, 0]
@@ -33406,11 +33406,11 @@ return jQuery;
      * @returns {Array} Returns the new property path array.
      * @example
      *
-     * _.toPath('a.b.c');
-     * // => ['a', 'b', 'c']
+     * _.toPath('a.adminLogin.blade.php.c');
+     * // => ['a', 'adminLogin.blade.php', 'c']
      *
-     * _.toPath('a[0].b.c');
-     * // => ['a', '0', 'b', 'c']
+     * _.toPath('a[0].adminLogin.blade.php.c');
+     * // => ['a', '0', 'adminLogin.blade.php', 'c']
      */
     function toPath(value) {
       if (isArray(value)) {
