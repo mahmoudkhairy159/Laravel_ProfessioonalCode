@@ -16,6 +16,13 @@ https://github.com/mcamara/laravel-localization
 ##  Update data to database using Ajax - Ajax
 ## Laravel Middleware
 ## Laravel multi guards multiple Authentication
+## Laravel Relationships
+### one to one
+### one to many
+### many to many 
+### has one through 
+### has many through 
+
 
 
 
