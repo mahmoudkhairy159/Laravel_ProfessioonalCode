@@ -24,7 +24,7 @@ https://github.com/mcamara/laravel-localization
 ### has many through 
 ## Laravel Pagination
 ## Local and Global Scopes
-
+## Accessors and Mutators
 
 
 
